@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Water Polo Score Keeper</string>
+    <string name="ImageDesc">The background image for the app</string>
+    <string name="TeamA">Team A</string>
+    <string name="TeamB">Team B</string>
+    <string name="Goal">Goal</string>
+    <string name="Corner">Corner</string>
+    <string name="Foul">Foul</string>
+    <string name="Exclusion">Exclusion</string>
+    <string name="Penalty">Penalty</string>
+    <string name="Reset">Reset</string>
+</resources>

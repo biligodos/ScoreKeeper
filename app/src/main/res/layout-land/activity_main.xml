@@ -1,0 +1,187 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/ImageDesc"
+        android:scaleType="centerCrop"
+        android:src="@drawable/waterpoloball" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <EditText
+                android:id="@+id/team_a_name"
+                style="@style/TextView_1"
+                android:text="@string/TeamA" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                style="@style/TextView_2" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/ButtonView_1"
+                android:onClick="addGoalForTeamA"
+                android:text="@string/Goal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/ButtonView_2"
+                    android:onClick="addCornerForTeamA"
+                    android:text="@string/Corner" />
+
+                <TextView
+                    android:id="@+id/team_a_corner"
+                    style="@style/TextView_3" />
+
+                <Button
+                    style="@style/ButtonView_2"
+                    android:onClick="addFoulForTeamA"
+                    android:text="@string/Foul" />
+
+                <TextView
+                    android:id="@+id/team_a_foul"
+                    style="@style/TextView_3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/ButtonView_2"
+                    android:onClick="addExclusionForTeamA"
+                    android:text="@string/Exclusion" />
+
+                <TextView
+                    android:id="@+id/team_a_exclusion"
+                    style="@style/TextView_3" />
+
+                <Button
+                    style="@style/ButtonView_2"
+                    android:onClick="addPenaltyForTeamA"
+                    android:text="@string/Penalty" />
+
+                <TextView
+                    android:id="@+id/team_a_penalty"
+                    style="@style/TextView_3" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <EditText
+                android:id="@+id/team_b_name"
+                style="@style/TextView_1"
+                android:text="@string/TeamB" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                style="@style/TextView_2" />
+
+            <Button
+                style="@style/ButtonView_1"
+                android:onClick="addGoalForTeamB"
+                android:text="@string/Goal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button"
+                    style="@style/ButtonView_2"
+                    android:onClick="addCornerForTeamB"
+                    android:text="@string/Corner" />
+
+                <TextView
+                    android:id="@+id/team_b_corner"
+                    style="@style/TextView_3" />
+
+                <Button
+                    style="@style/ButtonView_2"
+                    android:onClick="addFoulForTeamB"
+                    android:text="@string/Foul" />
+
+                <TextView
+                    android:id="@+id/team_b_foul"
+                    style="@style/TextView_3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/ButtonView_2"
+                    android:onClick="addExclusionForTeamB"
+                    android:text="@string/Exclusion" />
+
+                <TextView
+                    android:id="@+id/team_b_exclusion"
+                    style="@style/TextView_3" />
+
+                <Button
+                    style="@style/ButtonView_2"
+                    android:onClick="addPenaltyForTeamB"
+                    android:text="@string/Penalty" />
+
+                <TextView
+                    android:id="@+id/team_b_penalty"
+                    style="@style/TextView_3" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        style="@style/ButtonView_3"
+        android:onClick="resetScore"
+        android:text="@string/Reset" />
+
+
+</RelativeLayout>
